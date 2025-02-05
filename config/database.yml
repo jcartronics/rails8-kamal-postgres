@@ -81,9 +81,10 @@ test:
 production:
   primary: &primary_production
     <<: *default
-    database: rails8_kamal_postgres_production
-    username: rails8_kamal_postgres
-    password: <%= ENV["RAILS8_KAMAL_POSTGRES_DATABASE_PASSWORD"] %>
+    database: <%= ENV["POSTGRES_DB"] %>
+    username: <%= ENV["POSTGRES_USER"] %>
+    password: <%= ENV["POSTGRES_PASSWORD"] %>
+    host: <%= ENV["DB_HOST"] %>
   cache:
     <<: *primary_production
     database: rails8_kamal_postgres_production_cache
