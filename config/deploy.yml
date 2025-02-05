@@ -7,7 +7,7 @@ image: jcartronics/rails8_kamal_postgres
 # Deploy to these servers.
 servers:
   web:
-    - 192.168.0.1
+    - 143.198.79.236
   # job:
   #   hosts:
   #     - 192.168.0.1
