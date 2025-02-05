@@ -2,7 +2,7 @@
 service: rails8_kamal_postgres
 
 # Name of the container image.
-image: your-user/rails8_kamal_postgres
+image: jcartronics/rails8_kamal_postgres
 
 # Deploy to these servers.
 servers:
@@ -25,7 +25,7 @@ proxy:
 registry:
   # Specify the registry server, if you're not using Docker Hub
   # server: registry.digitalocean.com / ghcr.io / ...
-  username: your-user
+  username: jcartronics
 
   # Always use an access token rather than real password when possible.
   password:
